@@ -1,0 +1,50 @@
+					<nav>
+						<ul class="sf-menu">
+							<li class="current selectedLava">
+
+							<%= link_to(url_for(:controller=>'home', :action=>'casa')) do %>
+    					      A Casa<span class="sub">Inicio&nbsp;</span>
+							<% end %>								
+							</li>
+							<li>
+
+							<%= link_to(url_for(:controller=>'home', :action=>'agenda')) do %>
+    					      Agenda<span class="sub">Nossa programação&nbsp;</span>
+							<% end %>
+							</li>
+							<li>
+                            <%= link_to(url_for(:controller=>'home', :action=>'cardapio')) do %>
+    					      Cardápio<span class="sub">Confira o que oferecemos&nbsp;</span>
+							<% end %>
+							</li>
+							<li>
+							<%= link_to(url_for(:controller=>'home', :action=>'ingressos')) do %>
+    					      Ingressos<span class="sub">Ingressos e Camarotes&nbsp;</span>
+							<% end %>	
+							</li>
+
+							<li>
+							<%= link_to(url_for(:controller=>'home', :action=>'midia')) do %>
+    					      Midia<span class="sub">Fotos e videos&nbsp;</span>
+							<% end %>
+							
+								<ul>
+									<li><a href="gallery4.html">Galeria de imagens</a></li>
+									<li><a href="gallery3.html">Galeria de videos</a></li>
+								</ul>
+							</li>
+							<li>
+							<%= link_to(url_for(:controller=>'home', :action=>'novidades')) do %>
+    					      Novidades<span class="sub">Acompanhe&nbsp;</span>
+							<% end %>	
+							
+
+							</li>
+							<li>
+							<%= link_to(url_for(:controller=>'home', :action=>'contato')) do %>
+    					      Contato<span class="sub">Fale conosco&nbsp;</span>
+							<% end %>	
+							
+							</li>
+						</ul><!-- end menu -->
+					</nav><!-- end nav -->
