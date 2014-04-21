@@ -11,10 +11,10 @@ set :application, "coyote"
 server "107.170.116.111", :web, :app, :db, primary: true
 set :keep_releases, 2
 set :scm, :git
-set :repository, 'git@github.com:ifollow/papododia.git'
+set :repository, 'git@github.com:ifollow/coyote.git'
 set :branch, 'master'
 set :deploy_via, :remote_cache
-set :deploy_to, '/var/www/papododia'
+set :deploy_to, '/var/www/coyote'
 set :current, "#{deploy_to}/current"
 set :user, "root"
 set :use_sudo, false
