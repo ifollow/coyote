@@ -1,0 +1,1140 @@
+/*!
+ * Theme Name: Vegazone - Coming Soon Theme
+ * Version: 1.0
+ * Copyright 2014 
+ * Created by: Chris Rhodes
+ * License:
+ * License URI:
+ */
+ 
+/*** FONTS ***/
+
+@font-face {
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/lobster.ttf), url(../fonts/lobster.woff);
+}
+
+@font-face {
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/opensans.ttf), url(../fonts/opensans.woff);
+}
+
+@font-face {
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/opensans-light.ttf), url(../fonts/opensans-light.woff);
+}
+
+@font-face {
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/opensans-bold.ttf), url(../fonts/opensans-bold.woff);
+}
+
+@font-face {
+	font-family: ralewaybold;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/raleway/raleway-bold-webfont.ttf), url(../fonts/raleway/raleway-bold-webfont.woff);
+}
+
+/*** GLOBAL ***/
+
+body {
+	z-index: auto;
+	overflow: auto;
+	position: static;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: #000000;
+	opacity: 1;
+}
+
+#interface {
+	z-index: 0;
+	overflow: hidden;
+	position: absolute;
+	display: block;
+	height: auto;
+	min-height: 100%;
+	max-height: none;
+	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#spinload {
+	z-index: 1000000;
+	overflow: hidden;
+	position: fixed;
+	display: block;
+	height: auto;
+	min-height: 100%;
+	max-height: none;
+	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: #000000;
+	opacity: 1;
+}
+
+#frame {
+	z-index: 1000000;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.thin {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	width: auto;
+	min-width: 0;
+	max-width: 600px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.large {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	width: auto;
+	min-width: 0;
+	max-width: 1800px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.left {
+	float: left;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.right {
+	float: right;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.clear {
+	clear: both;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.x5 {
+	width: 5%;
+}
+
+.x10 {
+	width: 10%;
+}
+
+.x15 {
+	width: 15%;
+}
+
+.x20 {
+	width: 20%;
+}
+
+.x25 {
+	width: 25%;
+}
+
+.x30 {
+	width: 30%;
+}
+
+.x35 {
+	width: 35%;
+}
+
+.x40 {
+	width: 40%;
+}
+
+.x45 {
+	width: 45%;
+}
+
+.x50 {
+	width: 50%;
+}
+
+.x55 {
+	width: 55%;
+}
+
+.x60 {
+	width: 60%;
+}
+
+.x65 {
+	width: 65%;
+}
+
+.x70 {
+	width: 70%;
+}
+
+.x75 {
+	width: 75%;
+}
+
+.x80 {
+	width: 80%;
+}
+
+.x85 {
+	width: 85%;
+}
+
+.x90 {
+	width: 90%;
+}
+
+.x95 {
+	width: 95%;
+}
+
+.x100 {
+	width: 100%;
+}
+
+.fast {
+	-webkit-transition: margin 0.25s linear, background 0.25s linear, opacity 0.25s linear, color 0.25s linear, box-shadow 0.25s linear;
+	-moz-transition: margin 0.25s linear, background 0.25s linear, opacity 0.25s linear, color 0.25s linear, box-shadow 0.25s linear;
+	-ms-transition: margin 0.25s linear, background 0.25s linear, opacity 0.25s linear, color 0.25s linear, box-shadow 0.25s linear;
+	-o-transition: margin 0.25s linear, background 0.25s linear, opacity 0.25s linear, color 0.25s linear, box-shadow 0.25s linear;
+	transition: margin 0.25s linear, background 0.25s linear, opacity 0.25s linear, color 0.25s linear, box-shadow 0.25s linear;
+}
+
+.slow {
+	-webkit-transition: margin 0.50s linear, background 0.50s linear, opacity 0.50s linear, color 0.50s linear, box-shadow 0.50s linear;
+	-moz-transition: margin 0.50s linear, background 0.50s linear, opacity 0.50s linear, color 0.50s linear, box-shadow 0.50s linear;
+	-ms-transition: margin 0.50s linear, background 0.50s linear, opacity 0.50s linear, color 0.50s linear, box-shadow 0.50s linear;
+	-o-transition: margin 0.50s linear, background 0.50s linear, opacity 0.50s linear, color 0.50s linear, box-shadow 0.50s linear;
+	transition: margin 0.50s linear, background 0.50s linear, opacity 0.50s linear, color 0.50s linear, box-shadow 0.50s linear;
+}
+
+.border {
+	-webkit-box-shadow: inset 0 0 0 2px #FFFFFF;
+	-moz-box-shadow: inset 0 0 0 2px #FFFFFF;
+	-ms-box-shadow: inset 0 0 0 2px #FFFFFF;
+	-o-box-shadow: inset 0 0 0 2px #FFFFFF;
+	box-shadow: inset 0 0 0 2px #FFFFFF;
+}
+
+.border:hover {
+	-webkit-box-shadow: inset 0 0 0 10px #FFFFFF;
+	-moz-box-shadow: inset 0 0 0 10px #FFFFFF;
+	-ms-box-shadow: inset 0 0 0 10px #FFFFFF;
+	-o-box-shadow: inset 0 0 0 10px #FFFFFF;
+	box-shadow: inset 0 0 0 10px #FFFFFF;
+}
+
+.shadow {
+	-webkit-box-shadow: 0 10px 10px -10px #000000;
+	-moz-box-shadow: 0 10px 10px -10px #000000;
+	-ms-box-shadow: 0 10px 10px -10px #000000;
+	-o-box-shadow: 0 10px 10px -10px #000000;
+	box-shadow: 0 10px 10px -10px #000000;
+}
+
+.wrap {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+.collection {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px 4px 4px 4px;
+	background: #FFFFFF;
+	opacity: 1;
+}
+
+.field {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 14px/20px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.area {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	min-height: 100px;
+	max-height: none;
+	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 14px/20px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.button {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px 4px 4px 4px;
+	background: transparent;
+	opacity: 1;
+	font: 20px/20px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.button:hover {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px 4px 4px 4px;
+	background: #FFFFFF;
+	opacity: 1;
+	font: 20px/20px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+/*** GALLERY ***/
+
+#gallery {
+	z-index: 0;
+	overflow: hidden;
+	position: fixed;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#gallery .slide {
+	z-index: 0;
+	overflow: visible;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent no-repeat fixed center center;
+	opacity: 0;
+}
+
+/*** HERO ***/
+
+#hero {
+	z-index: 1000;
+	overflow: hidden;
+	position: fixed;
+	display: block;
+	height: 85%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#hero .clock {
+	z-index: 0;
+	overflow: visible;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#hero .content {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#hero .content .thin .wrap .topic {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 50px/50px Lobster, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 2px 0 #000000;
+}
+
+#hero .content .thin .wrap .time {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 20px/30px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 2px 0 #000000;
+}
+#countdown {
+	width: 750px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 14px;
+}
+#countdown .bigger {
+	color: #FFF;
+	font-size: 88px;
+	font-weight: bold;
+	line-height: 1;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.84);
+	font-family:OpenSans;
+}
+.col-md-3 {
+	width: 25%;
+	float:left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align:center;
+}
+#countdown h4 {
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: bold;
+	color:#FFF;
+	font-family:OpenSans;
+}
+.icon-scroll {
+	padding-top: 48px;
+	padding-bottom: 33px;
+	width:100% !important;
+	text-align:center;
+	display:block !important;
+}
+.icon-scroll i{
+	color: #FFF;
+	font-size: 41px;
+	border: 4px solid #FFF;
+	width: 54px;
+	line-height: 42px;
+	border-radius: 43px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	padding:0px 10px;
+}
+
+@media (max-width: 1000px){
+	#countdown>div {
+		width: 25%;
+		float: left;
+	}
+}
+@media (max-width: 800px){
+	#countdown {
+		width: 100%;
+		padding-top:10px;
+	}
+	#countdown .bigger {
+		color: #FFFF;
+		font-size: 58px;
+	}
+	#countdown h4 {
+		font-size: 15px;
+	}
+	
+}
+@media (max-width: 580px){
+	#countdown .bigger {
+		font-size: 38px;
+	}
+	#countdown h4 {
+		font-size: 14px;
+	}
+}
+
+
+/*** ABOUT ***/
+
+#about {
+	z-index: 0;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent url(../images/diamond.png) repeat scroll top center;
+	opacity: 1;
+}
+
+#about .content {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 30px auto 30px auto;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#about .content .large .wrap .topic, #contact .content .wrap .topic {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 300 50px/50px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 2px 0 #FFFFFF;
+}
+
+#about .content .large .wrap .hint, #contact .content .wrap .hint {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 16px/20px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+#about .content .large .wrap .quote {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 20px/30px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.testimonial_home img {
+	width: 100px!important;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	margin: 10px auto;
+}
+.centered {
+	text-align: center;
+}
+.author {
+	font-size: 13px;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	color: #666;
+	font-family: 'ralewaybold';
+}
+.author span{
+	color: #333;
+}
+
+/*** CONTACT ***/
+
+#contact {
+	z-index: 0;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background-color:#FFF;
+	opacity: 1;
+}
+
+#contact .content {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 80px auto 80px auto;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#contact .content .thin .wrap .topic {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 300 50px/50px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 2px 0 #000000;
+}
+
+#contact .content .thin .wrap .hint {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 16px/20px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+#contact .content .thin .wrap .data {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#contact .content .thin .wrap .coverage {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#contact .content .thin .wrap .coverage .icon {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 50px 50px 50px 50px;
+	background: transparent;
+	opacity: 1;
+}
+
+.contact_info {
+	width: 100%;
+	float: left;
+	margin-left: 20px;
+	font: 20px/30px OpenSans, Helvetica, Arial;
+}
+.contact_info h3 {
+	font-size: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+}
+.color-black {
+	color: #000;
+}
+.contact_info p {
+	font-size: 14px;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+	.contact_info i {
+	font-size: 24px;
+	color: #000;
+	margin: 0 15px 10px 0;
+	position: relative;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+}
+.contact_form {
+	width: 100%;
+	float: left;
+}
+.contact_form .form {
+	padding-top: 1px;
+}
+#contact-form {
+	margin-top: 0px;
+}
+.contact_form .fields {
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.contact_form .fields .column {
+	width: 48%!important;
+	float: left;
+	margin-right: 20px;
+}
+.contact form input[type="text"] {
+	height: 45px;
+	resize: none;
+}
+.contact_form .fields .columnlast {
+	width: 48%!important;
+	float: right;
+	margin-right: 0px!important;
+}
+.contact form input[type="text"], .contact form input[type="password"], .contact form textarea {
+	width: 100%;
+	font-family: 'ralewaylight', sans-serif;
+	border: 1px solid #e5e5e5;
+	color: #999;
+	font-size: 13px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	padding: 15px 10px 15px;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.contact form textarea {
+	min-height: 120px;
+}
+.contact form input[type="submit"] {
+	background: transparent;
+	border: 1px solid #e5e5e5;
+	color: #999;
+	text-transform: uppercase;
+	padding: 0 20px;
+	font-size: 12px;
+	line-height: 44px;
+	min-width: 150px;
+	text-align: center;
+	letter-spacing: 3px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	float: right;
+	cursor: pointer;
+	height: 45px;
+}
+.contact form input[type="submit"]:hover {
+	background: #666;
+	border: 2px solid #666;
+	color: #FFF;
+}
+.column:first-child, .columns:first-child, .alpha {
+	margin-left: 0px;
+}
+@media screen and (max-width: 768px){
+	.contact_form .fields .column {
+		width: 100%!important;
+		float: left;
+}
+.contact_form .fields .columnlast {
+	width: 100%!important;
+	float: left;
+}
+}
+
+/*** MAP ***/
+
+#map {
+	z-index: 0;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: 400px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent url(../images/diamond.png) repeat scroll top center;
+	opacity: 1;
+}
+
+#map .content {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+/*** SOCIAL ICONS ***/
+#social_icons {
+	background-color: #FFF;
+}
+.social_icons {
+	padding: 30px;
+	color: #666;
+}
+.social_icons li {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 26px;
+	line-height: 54px;
+	color: #333;
+	border: 2px solid #666;
+	width: 60px!important;
+	height: 60px!important;
+	border-radius: 50%!important;
+	cursor: pointer;
+}
+.social_icons li:hover {
+	border:2px solid #666;
+	background:#666!important;
+	color:#fff!important;
+}
+.social_icons li:hover a {
+	color:#fff!important;
+}
+.social_icons a {
+	color: #666;
+	border-bottom: none;
+}
+
+
+
+/*** LEGAL ***/
+
+#legal {
+	z-index: 0;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: #000000;
+	opacity: 1;
+}
+
+#legal .content {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+}
+
+#legal .content .thin .wrap .copyright {
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 14px/20px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+}

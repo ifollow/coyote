@@ -1,0 +1,107 @@
+		<div id="spinload"></div>
+		<div id="interface">
+        	<div id="hero">
+                <!--  Count down -->
+				<div class="content" style="margin-top:150px;">
+					<div class="thin" style="max-width:750px;">
+					<div style="margin-top:-90px; height:120px;">
+						<center><%= image_tag '/images/logonova.png' , :style => 'height:220px;' %></center>
+					</div>
+						<div class="wrap">
+						
+							<h1 class="topic"></h1>
+							<p class="time"></p>
+							<div><br />
+							<br />
+							<br /></div><br />
+							<% @data_l =  %>
+                            <h2 id="countdown" class="row" style="color:#FFFFFF;">Faltam {9} dia(s) para o nosso lançamento!</h2>
+                            <div class="icon-scroll">
+                                <a href="#"><i class="icon-caret-down"></i></a>
+                            </div>
+						</div> 
+					</div>
+				</div>
+			</div>
+        	<div id="slides" style="position:fixed !important;">
+                <ul class="slides-container">
+                    <li>
+                        <!-- Slide -->
+                        <div style="background-image: url(resources/images/sl5.jpg);" class="fullscreen-image"></div>
+                    </li>
+                    <li>
+                        <!-- Slide -->
+                        <div style="background-image: url(resources/images/sl4.jpg);" class="fullscreen-image"></div>
+                    </li>
+                    <li>
+                        <!-- Slide -->
+                        <div style="background-image: url(resources/images/sl3.jpg);" class="fullscreen-image"></div>
+                    </li>
+                    <li>
+                    	<!-- Slide -->
+                        <div style="background-image: url(resources/images/sl2.jpg);" class="fullscreen-image"></div>
+                    </li>
+                    <li>
+                    	<!-- Slide -->
+                        <div style="background-image: url(resources/images/sl1.jpg);" class="fullscreen-image"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- About Section -->
+			<div id="frame">
+				<div id="about">
+				
+					<script type="text/javascript"></script>
+				</div>
+                <!-- Contact Section -->
+				<div id="contact">
+					<div class="content">
+                    	<div class="wrap">
+								<h2 class="topic" style="text-align:center;">Onde estamos?</h2>
+								
+							</div>
+                 
+					</div>
+				
+				</div>
+				<div id="map">
+					<div class="content"></div>
+					<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+					<script type="text/javascript">
+						$(function () {
+							$("#map").draw();
+						});
+					</script>
+				</div>
+                <!-- Footer -->
+                <section id="social_icons">
+                    <div class="row">
+                      <div class="twelve columns">
+                        <div class="social_icons">
+                          <ul class="centered">
+                            <li><a href="http://www.facebook.com/coyote.cg" title="facebook" class="zocial facebook"></a></li>
+                            <li><a href="#" title="twitter" class="zocial twitter"></a></li>
+                           
+                            <li><a href="" title="instagram" class="zocial instagram"></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+				<div id="legal">
+					<div class="content">
+						<div class="thin">
+							<div class="wrap">
+								<p class="copyright">2014 &copy; Todos os direitos reservados.</p>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript"></script>
+				</div>
+			</div>
+		</div>
+        <!-- Javascript -->
+        <script src="/resources/js/new/jquery.superslides.min.js"></script>
+        <script src="/resources/js/new/jquery.flexslider-min.js"></script>
+        <script src="/resources/js/new/jquery.countdown.min.js"></script>
+        <script src="/resources/js/custom.js"></script>

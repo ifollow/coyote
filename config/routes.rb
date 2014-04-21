@@ -1,5 +1,6 @@
 Coyote::Application.routes.draw do
   
+  get "coming/soon"
   get "home/index"
   get "home/casa"
   get "home/agenda"
@@ -13,7 +14,7 @@ Coyote::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  root 'coming#soon'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

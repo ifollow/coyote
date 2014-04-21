@@ -1,10 +1,10 @@
 					<div class="foot-menu">
 						<ul>
-							<li><a href="index.html">A Casa</a></li>
-							<li><a href="mp3s.html">Agenda</a></li>
-							<li><a href="videos.html">Aniversários</a></li>
-							<li><a href="gallery.html">Ingressos</a></li>
-							<li><a href="blog.html">Midia</a></li>
-							<li><a href="contact.html">Contato</a></li>
+							<li><%= link_to "A Casa", :controller => 'home', :action => 'casa' %></li>
+							<li><%= link_to 'Agenda', :controller => 'home', :action => 'agenda' %></li>
+							<li><%= link_to 'Cardápio', :controller => 'home', :action => 'cardapio' %></li>
+							<li><%= link_to 'Ingressos', :controller => 'home', :action => 'ingressos' %></li>
+							<li><%= link_to 'Midia', :controller => 'home', :action => 'midia' %></li>
+							<li><%= link_to 'Contato', :controller => 'home', :action => 'contato' %></li>
 						</ul><!-- end links -->
 					</div><!-- end foot menu -->
